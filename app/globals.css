@@ -1115,10 +1115,11 @@ td strong {
   border-left: 4px solid var(--color-brand-primary);
 }
 
-.avatar {
+.avatar, .leader-profile-image-wrapper {
   display: grid;
   width: 96px;
   height: 96px;
+  flex: 0 0 96px;
   place-items: center;
   border-radius: 50%;
   background: var(--color-brand-dark);
@@ -1126,6 +1127,16 @@ td strong {
   color: #ffffff;
   font: 32px Georgia, serif;
   box-shadow: 0 6px 18px rgba(6, 43, 69, 0.15);
+  overflow: hidden;
+}
+
+.leader-profile-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 18%;
+  border-radius: 50%;
 }
 
 .cm > div:nth-child(2) > p:last-child {
@@ -1841,9 +1852,10 @@ footer p {
   .cm {
     grid-template-columns: 90px 1fr;
   }
-  .avatar {
+  .avatar, .leader-profile-image-wrapper {
     width: 80px;
     height: 80px;
+    flex: 0 0 80px;
     font-size: 26px;
   }
   .cm-stats {
@@ -1908,9 +1920,10 @@ footer p {
     grid-template-columns: 1fr;
     padding: 20px;
   }
-  .avatar {
+  .avatar, .leader-profile-image-wrapper {
     width: 72px;
     height: 72px;
+    flex: 0 0 72px;
     font-size: 24px;
   }
   .profile-list article:nth-child(odd) {

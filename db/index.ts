@@ -4,8 +4,9 @@ import * as schema from "./schema";
 
 export function getDb() {
   try {
-    if (env && env.DB) {
-      return drizzle(env.DB, { schema });
+    const cfEnv = env as unknown as { DB?: D1Database };
+    if (cfEnv && cfEnv.DB) {
+      return drizzle(cfEnv.DB, { schema });
     }
   } catch {
     // Fall back to in-memory mock if D1 is unavailable

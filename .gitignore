@@ -1,0 +1,13 @@
+# dependencies
+/node_modules
+
+# next.js / vite build outputs
+/.next/
+/out/
+/dist/
+/.wrangler/
+/.sites-runtime/
+
+# local env files
+.env*.local
+.env
