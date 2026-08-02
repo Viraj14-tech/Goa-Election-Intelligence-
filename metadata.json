@@ -1,0 +1,6 @@
+{
+  "name": "Make My Campaign - Goa Election Intelligence",
+  "description": "A campaign intelligence dashboard by Make My Campaign (MMC) covering Goa's 2022 Assembly results, 2024 signals, and 2027 constituency outlook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
